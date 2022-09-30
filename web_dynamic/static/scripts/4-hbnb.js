@@ -21,6 +21,7 @@ $.get(url_status, function (response) {
 });
 
 $("button").click(function () {
+  $('.places > article').remove();
   $.ajax({
     url: "http://0.0.0.0:5001/api/v1/places_search/",
     dataType: "json",
